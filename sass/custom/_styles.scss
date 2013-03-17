@@ -27,3 +27,31 @@ article.archive-article-format { box-shadow: none; padding: 0; }
 
 // Add a little horizontal space in dt elements
 .dl-horizontal dt { width: 135px; }
+
+/* Alberto De Bortoli customizations from http://octopress.org/stylesheets/screen.css */
+img {
+  -webkit-border-radius:0.3em;
+  -moz-border-radius:0.3em;
+  -ms-border-radius:0.3em;
+  -o-border-radius:0.3em;
+  border-radius:0.3em;
+  -webkit-box-shadow:rgba(0,0,0,0.15) 0 1px 4px;
+  -moz-box-shadow:rgba(0,0,0,0.15) 0 1px 4px;
+  box-shadow:rgba(0,0,0,0.15) 0 1px 4px;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  border:#fff 0.3em solid
+}
+
+img.right {
+  float:right;
+  margin-left:1.5em;
+  margin-bottom:.8em
+}
+
+img.left {
+  float:left;
+  margin-right:1.5em;
+  margin-bottom:.8em
+}

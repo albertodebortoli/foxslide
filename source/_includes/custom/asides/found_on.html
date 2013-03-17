@@ -12,18 +12,34 @@
 {% endif %}
 
 {% if site.twitter_user %}
-<a href="http://twitter.com/{{site.twitter_user}}" rel="tooltip" title="Twitter"><img class="social_icon" title="Twitter" alt="Twitter icon" src="{{ root_url }}/images/glyphicons_391_twitter_t.png"></a>
+<a href="http://twitter.com/{{site.twitter_user}}" rel="tooltip" title="Twitter"><img class="social_icon" title="Twitter" alt="Twitter icon" src="{{ root_url }}/images/glyphicons_411_twitter.png"></a>
+{% endif %}
+
+{% if site.facebook_user %}
+<a href="http://facebook.com/{{site.facebook_user}}" rel="tooltip" title="Facebook"><img class="social_icon" title="Facebook" alt="Facebook icon" src="{{ root_url }}/images/glyphicons_410_facebook.png"></a>
 {% endif %}
 
 {% if site.googleplus_user %}
 <a href="https://plus.google.com/{{site.googleplus_user}}?rel=author" rel="tooltip" title="Google Plus"><img class="social_icon" title="Google Plus" alt="Google Plus icon" src="{{ root_url }}/images/glyphicons_386_google_plus.png"></a>
 {% endif %}
 
+{% if site.instagram_user %}
+<a href="http://instagram.com/{{site.instagram_user}}" rel="tooltip" title="Instagram"><img class="social_icon" title="Instagram" alt="Instagram icon" src="{{ root_url }}/images/glyphicons_412_instagram.png"></a>
+{% endif %}
+
+{% if site.itunes_user %}
+<a href="http://itunes.com/{{site.itunes_user}}" rel="tooltip" title="App Store"><img class="social_icon" title="App Store" alt="App Store icon" src="{{ root_url }}/images/glyphicons_163_iphone.png"></a>
+{% endif %}
+
 {% if site.quora_user %}
 <a href="http://www.quora.com/{{site.quora_user}}" rel="tooltip" title="Quora"><img class="social_icon" title="Quora" alt="Quora icon" src="{{ root_url }}/images/glyphicons_385_quora.png"></a>
 {% endif %}
 
-{% if site.email %}
 <h2>contact at</h2>
-<a href="mailto:{{ site.email }}">{{ site.email }}</a>
+{% if site.email %}
+<a href="mailto:{{ site.email }}" rel="tooltip" title="email"><img class="social_icon" title="email" alt="email icon" src="{{ root_url }}/images/glyphicons_419_e-mail.png"> {{ site.email }}</a><br/>
+{% endif %}
+
+{% if site.skype_user %}
+<a href="skype:{{ site.skype_user }}?call" rel="tooltip" title="Skype"><img class="social_icon" title="Skype" alt="Skype icon" src="{{ root_url }}/images/glyphicons_418_skype.png"> {{ site.skype_user }}</a>
 {% endif %}
