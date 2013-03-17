@@ -33,7 +33,7 @@ $(function(){
     userId: instagram.userId,
     clientId: instagram.clientId,
     accessToken: instagram.accessToken,
-    show: 4,
+    show: 6,
     onComplete: function(photos, data) {
       if (data.pagination) {
         insta_next_url = data.pagination.next_url;
@@ -54,7 +54,7 @@ $(function(){
           clientId: instagram.clientId,
           accessToken: instagram.accessToken,
           next_url : insta_next_url,
-          show : 4,
+          show : 6,
           onComplete : function(photos, data) {
             insta_next_url = data.pagination.next_url;
             button.text(text);

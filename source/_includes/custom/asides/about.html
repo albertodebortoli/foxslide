@@ -1,2 +1,4 @@
 <h2>about me</h2>
-<p>A little something about me.</p>
+{% if site.about_me %}
+<p>{{ site.about_me }}</a>
+{% endif %}
