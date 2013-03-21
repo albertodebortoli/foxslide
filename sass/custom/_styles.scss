@@ -55,3 +55,18 @@ img.left {
   margin-right:1.5em;
   margin-bottom:.8em
 }
+
+/* FancyBox Galleries */
+$rad: 6px;
+ul.gallery {
+  border: thin solid gray;
+  -webkit-border-radius: $rad;
+  -moz-border-radius: $rad;
+  border-radius: $rad;
+  text-align: center;
+  padding: 5px;
+  li {
+    display: inline;
+    padding: 5px;
+  }
+}
